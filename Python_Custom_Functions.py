@@ -202,32 +202,75 @@
 
 # """
 
-def ascending(lst):
-    for i in range(len(lst)-1):
-        for j in range(len(lst)-i-1):
-            temp = lst[j]
-            if lst[j]>lst[j+1]:
-                lst[j] = lst[j+1]
-                lst[j+1] =temp
-            else:
-                pass 
-    return f"The list in ascending order is {lst}"
+# def ascending(lst):
+#     for i in range(len(lst)-1):
+#         for j in range(len(lst)-i-1):
+#             temp = lst[j]
+#             if lst[j]>lst[j+1]:
+#                 lst[j] = lst[j+1]
+#                 lst[j+1] =temp
+#             else:
+#                 pass 
+#     return f"The list in ascending order is {lst}"
 
-def descending(lst):
-    for i in range(len(lst)-1):
-        for j in range(len(lst)-i-1):
-            temp = lst[j]
-            if lst[j]<lst[j+1]:
-                lst[j] = lst[j+1]
-                lst[j+1] =temp
-            else:
-                pass 
-    return f"The list in descending order is {lst}"
+# def descending(lst):
+#     for i in range(len(lst)-1):
+#         for j in range(len(lst)-i-1):
+#             temp = lst[j]
+#             if lst[j]<lst[j+1]:
+#                 lst[j] = lst[j+1]
+#                 lst[j+1] =temp
+#             else:
+#                 pass 
+#     return f"The list in descending order is {lst}"
 
-print("\n")
-print("\nQuestion#6 \nTitle: Generating acsending and decending numbers sequence using loop ")
-print("\n")
-print(ascending([25,34,67,23,14]))
+# print("\n")
+# print("\nQuestion#6 \nTitle: Generating acsending and decending numbers sequence using loop ")
+# print("\n")
+# print(ascending([25,34,67,23,14]))
 
-print(descending([25,34,67,23,14]))
+# print(descending([25,34,67,23,14]))
 
+"""Question 7:
+
+Title: Generating acsending and decending numbers sequence using loop
+
+Parameters:
+--radius
+
+Returns:
+--area of the circle
+
+Test Case of radius:
+radius = 3m
+Expected value :
+Actual value   : 
+"""
+
+def area_of_circle(radius):
+    return f"The area is found to be {3.1452*(radius)**2} square meter"
+
+input_radius = int(input("Enter the radius of the circle: "))
+print(area_of_circle(input_radius))
+
+"""Question 8:
+
+Title: Convert Celsius to Fahrenheit and vice versa
+
+Parameters:
+--temperature in celsius or in farenheit 
+
+Returns:
+--celsius to farenheit or vice versa
+
+Test Case of celsius to farenheit:
+radius = 50 c
+Expected value :
+Actual value   :
+
+Test Case of farenheit to celsius:
+radius = 50 F
+Expected value :
+Actual value   :
+"""
+def celsius_to_farenheit()
