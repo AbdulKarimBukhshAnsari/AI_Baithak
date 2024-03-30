@@ -151,7 +151,7 @@ Parameters:
 --list
 
 Returns:
---It will return the sum of all the elements in the list.
+--It will return the min the max value in the list.
 
 Test Case 1:
 list = [1,2,3,4,5,6]
@@ -169,9 +169,10 @@ Actual Result : 157
 def sum_of_list(lst):
     sum = 0
     for i in range(len(lst)):
-        sum+=lst[i]
+        sum+=lst[i]   #store the value in the su variable in easch iteration
 
-    return f"The sum of the {lst} is found to be {sum}"
+    return f"The sum of the {lst} is found t
+    o be {sum}"
 print("\n\nQuestion#5 \nTitle: Finding min and max numbers in a list")
 lst_1 = [1,2,3,4,5,6]
 lst_2 = [20,30,40,67]
@@ -309,8 +310,8 @@ Expected value :1275
 Actual value   :1275
 """
 def sum_to_n(n):
-    sum = 0
-    for i in range(n+1):
+    sum = 0    #initialize the variable wih zero so that the sum will be stored in this variable 
+    for i in range(n+1): #because loop will be executed (n-1)
         sum+=i
     return f"The sum to {n} is found to be {sum}"
 
@@ -343,8 +344,8 @@ Actual value   :the number is found to be at 3 index
 
 def linear_search(lst,n):   #the lst is the list in which we have to find the required number
                             # n is the number which we have to find
-    for i in range(len(lst)):
-        if lst[i] == n:
+    for i in range(len(lst)):  #because we have to check in the list.
+        if lst[i] == n:   #checking the condition whether the element is 
             return f"The number {n} is found to be at index {i} in the list {lst}"
     else:
         return f"{n} is not found in the list {lst}"
